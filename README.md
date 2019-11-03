@@ -16,6 +16,8 @@ git reset HEAD .\index.html
 git  reset --hard HEAD^ 回退一个版本号  ^ 有几个就回退及个版本
 git reset --hard HEAD~1   数字是几就回退几个版本
 
+git reset --hard  + 版本号      实现任意版本之间的跳跃 任意版本的切换
+
 ## 工作目录撤销操作
 git checkout .\index.html   // 花式撤销 当前工作目录上一次修改的内容 
 
@@ -39,7 +41,31 @@ git diff
  git branch   
 
  ### 创建一个新的分支 ： 相当于复制一个一摸一样的自己出去 但它在另一个平行时空中
- git branch dev-HECHONG
+ git branch dev-HECHON
+
+
+ ### 创建分支并切换分支
+
+git checkout -b dev-XIAODAN
+
+
+### 各分支间的代码合并
+git merge dev-HECHONG
+
+
+### 删掉本地分支：
+git branch -d  dev-DELE
+
+
+### 建立与远程仓库的联系
+本地仓库 与 远程仓库 进行联系
+1、git remote add origin + 远程新仓库的地址   先建立与远程仓库的联系 
+2、先 git pull --rebase origin master    // 拉取远程分支上的代码进行合并 
+2、添加到暂存区 git add .      提交到本地git仓库  git commit -m ' 版本名字'
+3、然后才能 git push  origin  master   本地仓库内容上传到远程仓库master分支的内容 .gitignore 里限制的内容不能上传
+
+### 拉取远程分支上的代码: 
+git  pull origin master   // 拉取远程origin 分支下的 master 分支
 
 
 
