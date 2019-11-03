@@ -12,8 +12,11 @@ git status    查看当前工作区的状态 : 工作区修改   是否放到暂
 ## 从暂存区踢出到工作目录 
 git reset HEAD .\index.html
 
-git reset HEAD~3      //数字是几就回几个版本号
+## 进行版本的切换
+git  reset --hard HEAD^ 回退一个版本号  ^ 有几个就回退及个版本
+git reset --hard HEAD~1   数字是几就回退几个版本
 
+## 工作目录撤销操作
 git checkout .\index.html   // 花式撤销 当前工作目录上一次修改的内容 
 
 ## 版本合并操作
