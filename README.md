@@ -16,6 +16,8 @@ git reset HEAD .\index.html
 git  reset --hard HEAD^ 回退一个版本号  ^ 有几个就回退及个版本
 git reset --hard HEAD~1   数字是几就回退几个版本
 
+git reset --hard  + 版本号      实现任意版本之间的跳跃 任意版本的切换
+
 ## 工作目录撤销操作
 git checkout .\index.html   // 花式撤销 当前工作目录上一次修改的内容 
 
