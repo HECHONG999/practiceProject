@@ -18,7 +18,10 @@ git checkout .\index.html   // 花式撤销 当前工作目录上一次修改的
 
 ## 版本合并操作
 
-git rebase -i HEAD^^^
+git rebase -i HEAD^^^   //合并多个版本 ^^^ 有几个就合并几个版本  i插入  把pick 改为 squash 按 :wq退出
 
+
+### 本地仓库推送到远程分支上
+git  push -u origin master      // 推送到远程分支上   -u默认推送到远程master分支上
 
 
