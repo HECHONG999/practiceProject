@@ -41,7 +41,20 @@ git diff
  git branch   
 
  ### 创建一个新的分支 ： 相当于复制一个一摸一样的自己出去 但它在另一个平行时空中
- git branch dev-HECHONG
+ git branch dev-HECHON
+
+
+ ### 创建分支并切换分支
+
+git checkout -b dev-XIAODAN
+
+
+### 各分支间的代码合并
+git merge dev-HECHONG
+
+
+### 删掉本地分支：
+git branch -d   
 
 
 
